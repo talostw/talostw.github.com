@@ -1,0 +1,25 @@
+<ul class="nav">
+  <li class="dropdown">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+      <i class="icon-globe icon-white"></i>
+      {% if site.i18n.langs[page.lang] %}
+      {{ site.i18n.langs[page.lang] }}
+      {% else %}
+      Languages
+      {% endif %}
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+
+{% for lang in site.i18n.langs %}
+  {% if site.i18n.default == lang[0] %}
+    {% assign langpath = "" %}
+  {% else %}
+    {% assign langpath = lang[0] %}
+  {% endif %}
+  <li><a href="/{{langpath}}">{{lang[1]}}</a></li>
+{% endfor %}
+
+    </ul>
+  </li>
+</ul>
