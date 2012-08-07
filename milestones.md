@@ -1,12 +1,12 @@
 ---
 layout: page
-title: "Milestones"
-tagline: "A list of our short-term, mid-term and long-term goals"
+title: "里程碑"
+tagline: "我們的短期、中期與長期計畫。"
 group: navigation
+lang: zh-tw
 ---
-{% include JB/setup %}
 
-If you are interested in or specialized for the milestones below, please do not hestitate <a href="join.html">join us</a>.
+If you are interested in or specialized for the milestones below, please do not hestitate [join us](/join).
 
 Phase 1 (Foundations)
 ---------------------

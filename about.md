@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "About"
-tagline: "The reason why TALOS project started"
+title: "關於"
+tagline: "TALOS 計畫緣由。"
 group: navigation
+lang: zh-tw
 ---
-{% include JB/setup %}
 
 Goal
 ----
