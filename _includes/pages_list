@@ -18,11 +18,9 @@
           {% capture _list_level %}{{_list_level | plus:1}}{% endcapture %}
           {% assign group = node.subgroup %}
           {% include pages_list %}
-          {% capture _first %}{{_groups | split:"," | first }}{% endcapture %}
-          {{_first}}
+          {% capture _first %}{{_groups | split:, | first }}{% endcapture %}
           {% capture _groups %}{{_groups | remove_first: _first | remove_first: ","}}{% endcapture %}
-          {% capture group %}{{_groups | split:"," | first }}{% endcapture %}
-          {{_groups}}
+          {% capture group %}{{_groups | split:, | first }}{% endcapture %}
           {% capture _list_level %}{{_list_level | minus:1}}{% endcapture %}
           </ul></li>
         {% else %}
