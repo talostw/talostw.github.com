@@ -18,7 +18,6 @@
           {% assign group = node.subgroup %}
           {% include pages_list %}
           {% capture _first %}{{_groups | truncatewords: 1, '' }}{% endcapture %}
-          {{_groups}} / {{_first}}
           {% capture _groups %}{{_groups | remove_first: _first | remove_first:' '}}{% endcapture %}
           {% capture group %}{{_groups | truncatewords: 1, '' }}{% endcapture %}
           {% capture _list_level %}{{_list_level | minus:1}}{% endcapture %}
