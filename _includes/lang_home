@@ -1,9 +1,1 @@
-{% if site.i18n.langs[page.lang] %}
-  {% if site.i18n.default == page.lang %}
-    {% assign LANG_HOME = "/" %}
-  {% else %}
-    {% capture LANG_HOME %}/{{page.lang}}{% endcapture %}
-  {% endif %}
-{% else %}
-  {% assign LANG_HOME = "/" %}
-{% endif %}
+{% if site.i18n.langs[page.lang] %}{% if site.i18n.default == page.lang %}{% assign LANG_HOME = "/" %}{% else %}{% capture LANG_HOME %}/{{page.lang}}{% endcapture %}{% endif %}{% else %}{% assign LANG_HOME = "/" %}{% endif %}

@@ -39,14 +39,6 @@
             {% assign pages_list = site.pages %}
             {% assign group = 'navigation' %}
             {% include pages_list %}
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Works<b class="caret"></b></a>
-              <ul class="dropdown-menu">
-                {% assign pages_list = site.pages %}
-                {% assign group = 'works' %}
-                {% include pages_list %}
-              </ul>
-            </li>
           </ul>
           <ul class="nav pull-right">
             {% include langs_list %}
