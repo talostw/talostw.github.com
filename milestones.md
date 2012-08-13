@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "里程碑"
-tagline: "我們的短期、中期與長期計畫。"
+tagline: "我們的短期、中期與長期計畫"
 group: navigation
 lang: zh-tw
 ---
