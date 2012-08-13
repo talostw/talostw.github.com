@@ -3,6 +3,7 @@ layout: page
 title: "關於"
 tagline: "TALOS 計畫緣由"
 group: navigation
+weight: 1
 lang: zh-tw
 ---
 

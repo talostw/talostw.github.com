@@ -3,6 +3,7 @@ layout: page
 title: "About"
 tagline: "The reason why TALOS project started"
 group: navigation
+weight: 1
 lang: en
 ---
 

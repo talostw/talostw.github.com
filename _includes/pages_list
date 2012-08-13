@@ -3,35 +3,33 @@
   {% assign _groups = group %}
 {% endif %}
 
-{% for node in pages_list %}
-  {% if node.title != null %}
-    {% if group == nil or group == node.group %}
-      {% if page.lang == nil or page.lang == node.lang %}
-        {% if node.subgroup != nil %}
-          {% if node.subgroup_clickable != nil %}
-            <li class="dropdown"><a href="{{node.url}}" class="dropdown-toggle" data-toggle="dropdown">{{node.title}}<b class="caret"></b></a><ul class="dropdown-menu">
-          {% else %}
-            <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">{{node.title}}<b class="caret"></b></a><ul class="dropdown-menu">
-          {% endif %}
-          {% capture _groups %}{{node.subgroup}} {{_groups}}{% endcapture %}
-          {% capture _list_level %}{{_list_level | plus:1}}{% endcapture %}
-          {% assign group = node.subgroup %}
-          {% include pages_list %}
-          {% capture _first %}{{_groups | truncatewords: 1, '' }}{% endcapture %}
-          {% capture _groups %}{{_groups | remove_first: _first | remove_first:' '}}{% endcapture %}
-          {% capture group %}{{_groups | truncatewords: 1, '' }}{% endcapture %}
-          {% capture _list_level %}{{_list_level | minus:1}}{% endcapture %}
-          </ul></li>
+{% for w in (-10..10) %}
+  {% for node in pages_list %}
+    {% if node.title != null %}{% if group == nil or group == node.group %}{% if page.lang == nil or page.lang == node.lang %}{% if w == node.weight or w == 0 %}
+      {% if node.subgroup != nil %}
+        {% if node.subgroup_clickable != nil %}
+          <li class="dropdown"><a href="{{node.url}}" class="dropdown-toggle" data-toggle="dropdown">{{node.title}}<b class="caret"></b></a><ul class="dropdown-menu">
         {% else %}
-          {% if page.url == node.url %}
-            <li class="active"><a href="{{node.url}}" class="active">{{node.title}}</a></li>
-          {% else %}
-            <li><a href="{{node.url}}">{{node.title}}</a></li>
-          {% endif %}
+          <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">{{node.title}}<b class="caret"></b></a><ul class="dropdown-menu">
+        {% endif %}
+        {% capture _groups %}{{node.subgroup}} {{_groups}}{% endcapture %}
+        {% capture _list_level %}{{_list_level | plus:1}}{% endcapture %}
+        {% assign group = node.subgroup %}
+        {% include pages_list %}
+        {% capture _first %}{{_groups | truncatewords: 1, '' }}{% endcapture %}
+        {% capture _groups %}{{_groups | remove_first: _first | remove_first:' '}}{% endcapture %}
+        {% capture group %}{{_groups | truncatewords: 1, '' }}{% endcapture %}
+        {% capture _list_level %}{{_list_level | minus:1}}{% endcapture %}
+        </ul></li>
+      {% else %}
+        {% if page.url == node.url %}
+          <li class="active"><a href="{{node.url}}" class="active">{{node.title}}</a></li>
+        {% else %}
+          <li><a href="{{node.url}}">{{node.title}}</a></li>
         {% endif %}
       {% endif %}
-    {% endif %}
-  {% endif %}
+    {% endif %}{% endif %}{% endif %}{% endif %}
+  {% endfor %}
 {% endfor %}
 
 {% if _list_level == 0 %}

@@ -3,6 +3,7 @@ layout: page
 title: "Milestones"
 tagline: "A list of our short-term, mid-term and long-term goals"
 group: navigation
+weight: 2
 lang: en
 ---
 
