@@ -10,17 +10,17 @@ lang: en
 Goal
 ----
 
-To develop a localized open-source operating system for each of the actively spoken Austronesian languages in Taiwan.
+To develop a localized open-source desktop operating system for each of the actively spoken Austronesian languages in Taiwan.
 
 Reasoning
 ---------
 
-To date localized operating systems and software used in Taiwan only support Mandarin Chinese (Traditional variant). The indigenous population in Taiwan is therefor forced to use computers in a foreign language, since their native languages are not supported. This leads to diminishing the native languages, because people who are forced to use their computers in a foreign language, will rather adopt that language for all of their daily communication, instead of using their native languages. The result will be that the native languages will be lost forever in the near future. To counteract that development, we want to fully localize the operating system and the most common used software into each of the actively spoken Austronesian languages, in order to enable and encourage the indigenous population to use their native languages in daily conversation and to provide learning aids for teaching their kids and other scholars who want to learn those languages.
+To date localized operating systems and software used in Taiwan only support Mandarin Chinese (Traditional variant). The indigenous population in Taiwan is therefore forced to use computers in a foreign language to them, since their native languages are not supported. This leads to diminishing the native languages, because people who are forced to use their computers in a foreign language, will rather adopt that language for all of their daily communication, instead of using their native languages. The result will be that the native languages will be lost forever in the near future. To counteract that development, we want to localize the operating system and the most common used software into each of the actively spoken Austronesian languages, in order to enable and encourage the indigenous population to use their native languages in daily conversation and to provide learning aids for teaching their kids and other scholars who want to learn those languages.
 
 Why open-source?
 ----------------
 
-Since companies like Microsoft or Apple have no interest in investing into languages which are only spoken by a minority of people, and we cannot localize close-source operating systems, we rather use open-source software, which allows us to enhance the software and redistribute it free of charge and without restrictions other than to make the source code available to the general public.
+Since companies like Microsoft or Apple have no interest in investing into languages which are only spoken by a minority of people, and we cannot localize closed-source operating systems, we rather use open-source software, which allows us to enhance the software and redistribute it free of charge and without restrictions other than to make the source code available to the general public.
 
 Major benefits from this approach:
 
@@ -62,7 +62,7 @@ What are Taiwan Austronesian languages?
     <td>tay</td>
     <td><span class="label label-success">Active</span></td>
     <td>Sqoleq (Squliq), Ts’ole’ (Ci’uli’). Mayrinax is a Ci’uli’ subdialect</td>
-    <td></td>
+    <td>tay@cyoli, tay@cquliq, tay@squliq</td>
   </tr>
   <tr>
     <th>Babuza</th>
@@ -97,7 +97,7 @@ What are Taiwan Austronesian languages?
     <td>pwn</td>
     <td><span class="label label-success">Active</span></td>
     <td></td>
-    <td>pwn_TW</td>
+    <td></td>
   </tr>
   <tr>
     <th>Puyuma</th>
@@ -153,7 +153,7 @@ What are Taiwan Austronesian languages?
     <td>tao</td>
     <td><span class="label label-success">Active</span></td>
     <td></td>
-    <td>tao_TW</td>
+    <td></td>
   </tr>
 </tbody>
 </table>
