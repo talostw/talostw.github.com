@@ -7,15 +7,15 @@ weight: 1
 lang: zh-tw
 ---
 
-Goal
-----
+目標
+---
 
-To develop a localized open-source operating system for each of the actively spoken Austronesian languages in Taiwan.
+為所有在台灣仍被傳述的南島語系提供一個在地化的、開源的作業系統。
 
-Reasoning
----------
+緣由
+---
 
-To date localized operating systems and software used in Taiwan only support Mandarin Chinese (Traditional variant). The indigenous population in Taiwan is therefor forced to use computers in a foreign language, since their native languages are not supported. This leads to diminishing the native languages, because people who are forced to use their computers in a foreign language, will rather adopt that language for all of their daily communication, instead of using their native languages. The result will be that the native languages will be lost forever in the near future. To counteract that development, we want to fully localize the operating system and the most common used software into each of the actively spoken Austronesian languages, in order to enable and encourage the indigenous population to use their native languages in daily conversation and to provide learning aids for teaching their kids and other scholars who want to learn those languages.
+現今，在台灣使用的在地化作業系統與軟體只提供中文（繁體分支）的支援。由於母語並未被普遍支援，在台灣的原住民族於是乎被迫於使用外來語文操作電腦。慣於使用外文操作電腦勢必將導致母語的衰微，因為這些被強迫使用外文操作電腦的人可能會習慣使用這個外文而非母語做全部的日常溝通，而這終將導致這些語言的亡佚。為了避免未來演變成如此，我們打算為所有依然活躍的南島語言完整的在地化作業系統以及所有常用軟體，從而賦予並鼓勵原住民族使用自己的母語會話，並為其及子嗣與其他學者提供學習與傳播南島語言的教育支援。
 
 Why open-source?
 ----------------
