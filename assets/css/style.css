@@ -3,3 +3,16 @@ body {
   margin-top: 60px;
 }
 }
+
+@media (max-width: 979px) {
+  .nav-collapse.is-open {
+    height: auto;
+    overflow: visible;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .carousel .item {
+    transition: none;
+  }
+}

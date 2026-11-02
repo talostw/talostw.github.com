@@ -2,19 +2,16 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>{{ page.title }}</title>
-    {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
-    <meta name="author" content="{{ site.author.name }}">
+    <title>{{ page.title | escape }}</title>
+    {% if page.description %}<meta name="description" content="{{ page.description | escape }}">{% endif %}
+    <meta name="author" content="{{ site.author.name | escape }}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 
     <link href="/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="/assets/font-awesome/css/font-awesome.css" rel="stylesheet">
     <link href="/assets/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
 
-    <script src="/assets/jquery/jquery-1.7.2.min.js"></script>
-    <script src="/assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/assets/js/site.js" defer></script>
   </head>
 
   <body>
@@ -24,15 +21,15 @@
         <div class="container">
           {% include lang_home %}
           <!-- navbar collapsed icon -->
-          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+          <button type="button" class="btn btn-navbar" aria-controls="site-navigation" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
-          </a>
+          </button>
            
-          <a class="brand" href="{{LANG_HOME}}">{{site.title}}</a>
+          <a class="brand" href="{{ LANG_HOME | escape }}">{{ site.title | escape }}</a>
            
-          <div class="nav-collapse">
+          <div class="nav-collapse" id="site-navigation">
             <ul class="nav">
               {% assign pages_list = site.pages %}
               {% assign group = 'navigation' %}
@@ -53,7 +50,7 @@
       </div>
 
       <footer>
-        <p>&copy; {{ site.author.name }} 2012</p>
+        <p>&copy; {{ site.author.name | escape }} 2012</p>
       </footer>
 
     </div> <!-- /container -->
